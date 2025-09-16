@@ -21,7 +21,18 @@ A powerful, flexible, and feature-rich RecyclerView adapter for Android that sim
 
 ## 📦 Installation
 
-### Gradle (Module level)
+### Step 1: Add Repository (Project level settings.gradle)
+```gradle
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+### Step 2: Add Dependency (Module level build.gradle)
 ```gradle
 dependencies {
     implementation 'com.github.FellowJoy:FlexAdapter:v2.0.0'
